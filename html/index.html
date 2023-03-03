@@ -1,7 +1,331 @@
-
 <html>
-  <h1>Welcome to html-pdf-node</h1>
-      <p>shshdajkda</p>
-      <img width="100" src="LOGO-UPI.jpg"></img>
-      <img width="100" src="img.jpeg"></img>
+  <style>
+    html {
+      font-family: sans-serif;
+      font-size: 10px;
+      padding: 10 20px;
+    }
+    header {
+      border: 1px solid transparent;
+      position: relative;
+    }
+    main {
+      border: 1px solid transparent;
+      padding: 15px;
+    }
+    footer {
+      border: 1px solid transparent;
+      height: 60px;
+      display: flex;
+      align-items: end;
+      justify-content: space-between;
+    }
+    #headerTitle {
+      text-align: center;
+    }
+    #timestamp {
+      position: absolute;
+    }
+    #kopWrapper {
+      border: 1px solid transparent;
+      display: flex;
+      padding-bottom: 15px;
+      border-bottom: 2px solid black;
+    }
+    #kopImage {
+      border: 1px solid transparent;
+      width: fit-content;
+      padding: 1px;
+    }
+    #kopTitle {
+      border: 1px solid transparent;
+      text-align: center;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    #title {
+      border: 1px solid transparent;
+      text-align: center;
+    }
+    .subtitle {
+      border: 1px solid transparent;
+      text-align: center;
+    }
+    .subtitle h4 {
+      margin: 5px 0;
+    }
+    .mainData {
+      border: 1px solid transparent;
+      position: relative;
+      margin: 5px 0;
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+    #imageProfile {
+      position: absolute;
+      right: 0;
+    }
+    .rowData {
+      display: flex;
+      gap: 3px;
+    }
+    .labelData {
+      width: 220px;
+    }
+    #ttd {
+      border: 1px solid transparent;
+      margin-top: 5px;
+      text-align: right;
+    }
+    #ttd p {
+      margin: 2px 0;
+    }
+    #ttd div {
+      border: 1px solid transparent;
+      height: 50px;
+    }
+  </style>
+
+  <header>
+    <p id="timestamp">LOREM TIMESTAMP</p>
+    <p id="headerTitle">PMB UPI 2023 | Formulir Biodata Lembar ke-1</p>
+  </header>
+  <main>
+    <div id="kopWrapper">
+      <div id="kopImage">
+        <img width="75" src="LOGO-UPI.jpg" />
+      </div>
+      <div id="kopTitle">
+        <h1>UNIVERSITAS PENDIDIKAN INDONESIA</h1>
+      </div>
+    </div>
+    <div id="title">
+      <h2>DATA MAHASISWA</h2>
+    </div>
+    <div class="subtitle">
+      <h4>I. IDENTITAS MAHASISWA</h4>
+    </div>
+    <div class="mainData">
+      <div id="imageProfile">
+        <img width="100" src="img.jpeg" />
+      </div>
+      <div class="rowData">
+        <div class="labelData">NAMA LENGKAP</div>
+        <div>:</div>
+        <div>LOREM IPSUM</div>
+      </div>
+      <div class="rowData">
+        <div class="labelData">JENIS KELAMIN</div>
+        <div>:</div>
+        <div>LOREM IPSUM</div>
+      </div>
+      <div class="rowData">
+        <div class="labelData">NOMOR INDUK MAHASISWA</div>
+        <div>:</div>
+        <div>LOREM IPSUM</div>
+      </div>
+      <div class="rowData">
+        <div class="labelData">JENJANG / DEPARTEMEN / PRODI</div>
+        <div>:</div>
+        <div>LOREM IPSUM</div>
+      </div>
+      <div class="rowData">
+        <div class="labelData">FAKULTAS / KAMPUS DAERAH</div>
+        <div>:</div>
+        <div>LOREM IPSUM</div>
+      </div>
+      <div class="rowData">
+        <div class="labelData">NOMOR INDUK KEPENDUDUKAN (KTP)</div>
+        <div>:</div>
+        <div>LOREM IPSUM</div>
+      </div>
+      <div class="rowData">
+        <div class="labelData">TEMPAT / TGL LAHIR</div>
+        <div>:</div>
+        <div>LOREM IPSUM</div>
+      </div>
+      <div class="rowData">
+        <div class="labelData">AGAMA / STATUS MARITAL</div>
+        <div>:</div>
+        <div>LOREM IPSUM</div>
+      </div>
+      <div class="rowData">
+        <div class="labelData">GOL. DARAH / KEWARGANEGARAAN</div>
+        <div>:</div>
+        <div>LOREM IPSUM</div>
+      </div>
+      <div class="rowData">
+        <div class="labelData">NO BPJS</div>
+        <div>:</div>
+        <div>LOREM IPSUM</div>
+      </div>
+      <div class="rowData">
+        <div class="labelData">PEKERJAAN</div>
+        <div>:</div>
+        <div>LOREM IPSUM</div>
+      </div>
+      <div class="rowData">
+        <div class="labelData">JUMLAH SAUDARA</div>
+        <div>:</div>
+        <div>LOREM IPSUM</div>
+      </div>
+      <div class="rowData">
+        <div class="labelData">NO TELEPON / HP</div>
+        <div>:</div>
+        <div>LOREM IPSUM</div>
+      </div>
+      <div class="rowData">
+        <div class="labelData">ALAMAT ASAL</div>
+        <div>:</div>
+        <div>LOREM IPSUM</div>
+      </div>
+      <div class="rowData">
+        <div class="labelData">ALAMAT DI BANDUNG</div>
+        <div>:</div>
+        <div>LOREM IPSUM</div>
+      </div>
+    </div>
+    <div class="subtitle">
+      <h4>II. IDENTITAS ORANG TUA / WALI</h4>
+    </div>
+    <div class="mainData">
+      <div class="rowData">
+        <div class="labelData"><strong>A. AYAH</strong></div>
+      </div>
+      <div class="rowData">
+        <div class="labelData">STATUS AYAH</div>
+        <div>:</div>
+        <div>LOREM IPSUM</div>
+      </div>
+      <div class="rowData">
+        <div class="labelData">NAMA LENGKAP</div>
+        <div>:</div>
+        <div>LOREM IPSUM</div>
+      </div>
+      <div class="rowData">
+        <div class="labelData">NOMOR INDUK KEPENDUDUKAN (KTP)</div>
+        <div>:</div>
+        <div>LOREM IPSUM</div>
+      </div>
+      <div class="rowData">
+        <div class="labelData">PENDIDIKAN TERAKHIR</div>
+        <div>:</div>
+        <div>LOREM IPSUM</div>
+      </div>
+      <div class="rowData">
+        <div class="labelData">PEKERJAAN</div>
+        <div>:</div>
+        <div>LOREM IPSUM</div>
+      </div>
+      <div class="rowData">
+        <div class="labelData">PENGHASILAN PER BULAN</div>
+        <div>:</div>
+        <div>LOREM IPSUM</div>
+      </div>
+      <div class="rowData">
+        <div class="labelData">ALAMAT</div>
+        <div>:</div>
+        <div>LOREM IPSUM</div>
+      </div>
+      <div class="rowData">
+        <div class="labelData">NO TELEPON / HP</div>
+        <div>:</div>
+        <div>LOREM IPSUM</div>
+      </div>
+    </div>
+    <div class="mainData">
+      <div class="rowData">
+        <div class="labelData"><strong>B. IBU</strong></div>
+      </div>
+      <div class="rowData">
+        <div class="labelData">STATUS IBU</div>
+        <div>:</div>
+        <div>LOREM IPSUM</div>
+      </div>
+      <div class="rowData">
+        <div class="labelData">NAMA LENGKAP</div>
+        <div>:</div>
+        <div>LOREM IPSUM</div>
+      </div>
+      <div class="rowData">
+        <div class="labelData">NOMOR INDUK KEPENDUDUKAN (KTP)</div>
+        <div>:</div>
+        <div>LOREM IPSUM</div>
+      </div>
+      <div class="rowData">
+        <div class="labelData">PENDIDIKAN TERAKHIR</div>
+        <div>:</div>
+        <div>LOREM IPSUM</div>
+      </div>
+      <div class="rowData">
+        <div class="labelData">PEKERJAAN</div>
+        <div>:</div>
+        <div>LOREM IPSUM</div>
+      </div>
+      <div class="rowData">
+        <div class="labelData">PENGHASILAN PER BULAN</div>
+        <div>:</div>
+        <div>LOREM IPSUM</div>
+      </div>
+      <div class="rowData">
+        <div class="labelData">ALAMAT</div>
+        <div>:</div>
+        <div>LOREM IPSUM</div>
+      </div>
+      <div class="rowData">
+        <div class="labelData">NO TELEPON / HP</div>
+        <div>:</div>
+        <div>LOREM IPSUM</div>
+      </div>
+    </div>
+    <div class="subtitle">
+      <h4>III. IDENTITAS ASAL SEKOLAH</h4>
+    </div>
+    <div class="mainData">
+      <div class="rowData">
+        <div class="labelData">NAMA SEKOLAH</div>
+        <div>:</div>
+        <div>LOREM IPSUM</div>
+      </div>
+      <div class="rowData">
+        <div class="labelData">TAHUN LULUS</div>
+        <div>:</div>
+        <div>LOREM IPSUM</div>
+      </div>
+      <div class="rowData">
+        <div class="labelData">STATUS SEKOLAH</div>
+        <div>:</div>
+        <div>LOREM IPSUM</div>
+      </div>
+    </div>
+    <div class="subtitle">
+      <h4>IV. DITERIMA MENJADI MAHASISWA UPI</h4>
+    </div>
+    <div class="mainData">
+      <div class="rowData">
+        <div class="labelData">MULAI TANGGAL / BULAN / TAHUN</div>
+        <div>:</div>
+        <div>LOREM IPSUM</div>
+      </div>
+      <div class="rowData">
+        <div class="labelData">MELALUI JALUR</div>
+        <div>:</div>
+        <div>LOREM IPSUM</div>
+      </div>
+    </div>
+    <div id="ttd">
+      <p>LOREM KOTA TANGGAL BULAN TAHUN</p>
+      <p>TANDA TANGAN</p>
+      <div></div>
+      <p>LOREM NAMA LENGKAP</p>
+    </div>
+    <div><strong>Dokumen ini wajib dicetak dan disimpan.</strong></div>
+  </main>
+  <footer>
+    <div>LOREM URL</div>
+    <div>1/1</div>
+  </footer>
 </html>
