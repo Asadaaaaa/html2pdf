@@ -42,7 +42,7 @@ base64 path/to/image.jpg
 4. Visit http://localhost:3001/ in your browser.
 
 ## License
-This application is licensed under the MIT License. See the LICENSE file for more information.
+This application is licensed under the MIT License. See the [LICENSE](https://github.com/Asadaaaaa/html2pdf/blob/main/LICENSE) file for more information.
 
 ## Credits
 This application was built with the following libraries:
