@@ -47,6 +47,6 @@ This application is licensed under the MIT License. See the [LICENSE](https://gi
 ## Credits
 This application was built with the following libraries:
 
-Express.js - https://expressjs.com/
-html-pdf-node - https://www.npmjs.com/package/html-pdf-node
-Cheerio - https://cheerio.js.org/
+- Express.js - https://expressjs.com/
+- html-pdf-node - https://www.npmjs.com/package/html-pdf-node
+- Cheerio - https://cheerio.js.org/
